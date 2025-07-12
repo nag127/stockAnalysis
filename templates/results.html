@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Results for {{ symbol }}</title>
+  <style>
+    body { font-family: Arial, sans-serif; line-height: 1.6; }
+    h2 { margin-top: 30px; }
+    .content { border: 1px solid #ccc; padding: 15px; border-radius: 8px; }
+  </style>
+</head>
+<body>
+  <h1>Results for: {{ symbol }}</h1>
+
+  <h2>📊 Financial Analysis</h2>
+  <div class="content">
+    {{ analysis | safe }}
+  </div>
+
+  <h2>💡 Investment Recommendation</h2>
+  <div class="content">
+    {{ recommendation | safe }}
+  </div>
+
+  <br>
+  <a href="/">← Back</a>
+</body>
+</html>

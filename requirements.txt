@@ -1,0 +1,6 @@
+flask
+crewai
+openai
+yfinance
+curl_cffi
+langchain
